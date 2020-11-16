@@ -45,7 +45,7 @@ public class ShoppingCart {
  public void deleteCartItem(int index){
   try{
     cartItems.remove(index);
-  } catch(Exception e){
+  } catch(IndexOutOfBoundsException e){
     e.printStackTrace();
   }
  }
